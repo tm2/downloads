@@ -903,7 +903,7 @@ module.exports = Layout = (function(_super) {
 
   Layout.prototype.isExternalLink = function(link) {
     var _ref, _ref1;
-    return link.target === '_blank' || link.rel === 'external' || ((_ref = link.protocol) !== 'http:' && _ref !== 'https:' && _ref !== 'file:') || ((_ref1 = link.hostname) !== location.hostname && _ref1 !== '');
+    return link.target === '_blank' || link.rel === 'external' || ((_ref = link.protocol) !== 'http:' && _ref !== ''  && _ref !== 'https:' && _ref !== 'file:') || ((_ref1 = link.hostname) !== location.hostname && _ref1 !== '');
   };
 
   Layout.prototype.openLink = function(event) {
